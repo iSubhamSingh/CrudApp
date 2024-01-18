@@ -12,7 +12,11 @@ const studentSchema = new mongoose.Schema({
     branch:{
         type: String,
         required: true
-    }
+    },
+    year:{
+        type: Number,
+        required: true
+    
 })
 
 module.exports = mongoose.model('Student',studentSchema)
